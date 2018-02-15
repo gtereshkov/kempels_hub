@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>StoneBrick.by</title>
+
+    <!--css-->
+    <link href="css/templatemo_style.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css"/>
+
+
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+
+    <!--JavaScript-->
+    <script type="text/javascript" src="js/jquery-1-4-2.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/showhide.js"></script>
+    <script type="text/JavaScript" src="js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/ddsmoothmenu.js"></script>
+    <script type="text/JavaScript" src="js/cloud-carousel.1.0.5.js"></script>
+
+
+    <script type="text/javascript">
+
+        ddsmoothmenu.init({
+            mainmenuid: "templatemo_menu", //menu DIV id
+            orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+            classname: 'ddsmoothmenu', //class added to menu's outer DIV
+            //customtheme: ["#1c5a80", "#18374a"],
+            contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+        })
+
+    </script>
+
+    <!-- Load the CloudCarousel JavaScript file -->
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            // This initialises carousels on the container elements specified, in this case, carousel1.
+            $("#carousel1").CloudCarousel(
+                {
+                    reflHeight: 40,
+                    reflGap: 1,
+                    titleBox: $('#da-vinci-title'),
+                    altBox: $('#da-vinci-alt'),
+                    buttonLeft: $('#slider-left-but'),
+                    buttonRight: $('#slider-right-but'),
+                    yRadius: 30,
+                    xPos: 480,
+                    yPos: 32,
+                    speed: 0.15,
+                    autoRotate: "yes",
+                    autoRotateDelay: 5000
+                }
+            );
+        });
+
+    </script>
+</head>
+
+<body id="home">
+
+<div class="logotel">
+
+    <a href="tel:+375291106395" id="phone">+375(44) 559-82-01</a><br>
+    <a href="tel:+375291106395" id="phone">+375(44) 719-09-62</a><br>
+    <a href="tel:+375291106395" id="phone">+375(29) 768-06-24</a>
+    <br>
+    <a>Stone-Brick@mail.ru</a>
+
+</div>
+<div id="templatemo_header_wrapper">
+    <div id="site_title"><h1><a href="#">StoneBrick</a></h1></div>
+    <div id="templatemo_menu" class="ddsmoothmenu">
+        <ul>
+            <li><a href="index.html" class="selected">Главная</a></li>
+
+            <li><a href="portfolio.html">Галерея</a>
+            </li>
+            <li><a href="blog.html">Советы</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+            <li><a href="maincatalog.html">Каталог</a>
+                <ul>
+                    <li><span class="top"></span><span class="bottom"></span></li>
+                    <li><a href="maincatalog.html">Кирпич ручной формовки</a></li>
+                    <li><a href="betonrock.html">Камень из бетона</a></li>
+                    <li><a href="dekor.html">Декоративные элементы</a></li>
+                    <li><a href="relatedproducts.html">Сопутствующие товары</a></li>
+                </ul>
+            </li>
+        </ul>
+        <br style="clear: left"/>
+    </div> <!-- end of templatemo_menu -->
+    <div class="cleaner"></div>
+</div>    <!-- END of templatemo_header_wrapper -->
+<div id="templatemo_slider">
+    <!-- This is the container for the carousel. -->
+    <div id="carousel1" style="width:960px; height:280px;background:none;overflow:scroll; margin-top: 20px">
+        <!-- All images with class of "cloudcarousel" will be turned into carousel items -->
+        <!-- You can place links around these images -->
+        <a href="#" rel="lightbox"><img class="cloudcarousel" src="images/slider/01.jpg" alt="CSS Templates 1"
+                                        title="Website Templates 1"/></a>
+        <a href="#" rel="lightbox"><img class="cloudcarousel" src="images/slider/02.jpg" alt="CSS Templates 2"
+                                        title="Website Templates 2"/></a>
+        <a href="#" rel="lightbox"><img class="cloudcarousel" src="images/slider/03.jpg" alt="CSS Templates 3"
+                                        title="Website Templates 3"/></a>
+        <a href="#" rel="lightbox"><img class="cloudcarousel" src="images/slider/04.jpg" alt="CSS Templates 4"
+                                        title="Website Templates 4"/></a>
+        <a href="#" rel="lightbox"><img class="cloudcarousel" src="images/slider/05.jpg" alt="Flash Templates 1"
+                                        title="Flash Templates 1"/></a>
+        <a href="#" rel="lightbox"><img class="cloudcarousel" src="images/slider/06.jpg" alt="Flash Templates 2"
+                                        title="Flash Templates 2"/></a>
+        <a href="#" rel="lightbox"><img class="cloudcarousel" src="images/slider/07.jpg" alt="Flash Templates 3"
+                                        title="Flash Templates 3"/></a>
+        <a href="#" rel="lightbox"><img class="cloudcarousel" src="images/slider/08.jpg" alt="Flash Templates 4"
+                                        title="Flash Templates 4"/></a>
+    </div>
+
+    <!-- Define left and right buttons. -->
+    <center>
+        <input id="slider-left-but" type="button" value=""/>
+        <input id="slider-right-but" type="button" value=""/>
+    </center>
+</div>
+<div id="templatemo_main">
+
+    <div class="col one_third fp_services">
+        <h3>StoneBrick</h3>
+        <img src="images/image 04.jpg" alt="Image 04 " class="image_fl"/>
+        <style>
+            p1 {
+                font-family: Helvetica, sans-serif;
+                font-size: 9pt; /* Размер шрифта в пунктах */
+            }
+
+            .select {
+                /*color: maroon; !* Цвет текста *!*/
+                font-weight: 500; /* Жирное начертание */
+            }
+        </style>
+
+        <p1><span class="select"> В современном мире создание уюта и определенного стиля в своем доме неразрывно связано с творческим подходом
+            и использованием экологически чистых материалов. Декоративный камень, кирпич ручной формовки Real Brick® от
+            компании-производителя «Супер Дом®», помогут воплотить в жизнь многие дизайнерские и архитектурные решения.
+            Черпая вдохновение из многовековой истории, воплощаются в жизнь неповторимые и уникальные коллекции.
+            Являясь официальным дилером компании «Супер Дом®», с гордостью предлагаем Вам ознакомиться и приобрести
+            продукцию в нашем монобрендовом магазине, расположенному по адресу ул.Туровского, д.6, пав.157.
+        </span>
+        </p1>
+
+    </div>
+    <div class="col one_third fp_services">
+        <h3>О продукции</h3>
+        <p>Отличительными особенностями являются:</p>
+
+
+        <ul class="templatemo_list">
+            <li class="flow">Экологичность изделий. Использование экологически чистых материалов и компонентов при
+                изготовлении.
+            </li>
+            <li class="flow nomr">Надежность и качество. Вся продукция изготовлена из качественных материалов и
+                соответствует европейским стандартам.
+            </li>
+            <li class="flow">Естественность и натуральность расцветки и фактуры. Декоративный камень, кирпич ручной
+                формовки изготавливается с использованием натуральных пигментов, что дает возможность воссоздать
+                естественные природные тона;
+            </li>
+            <li class="flow nomr"> Долговечность – отделка декоративным камнем мало подвержена разрушениям и очень
+                прочна (Подходит для наружных и внутренних работ!)
+            </li>
+            <li class="flow">Влагостойкость и переносимость высоких температур.
+            </li>
+            <li class="flow nomr">Низкая истираемость (базовый раствор прокрашивается по всей глубине!)
+            </li>
+            <li class="flow">Высокий коэффициент прочности и морозостойкости, что подтверждается соответствующими
+                испытаниями.
+            </li>
+            <li class="flow nomr"> Эксклюзивность.
+
+            </li>
+        </ul>
+    </div>
+    <div class="col one_third no_margin_right fp_services">
+
+        <h3>Область применения:</h3>
+
+
+        <ul class="templatemo_list">
+            <li class="flow">Наружная отделка зданий и сооружений: фасад, цоколь, ступени, терраса, забор.
+            </li>
+            <li class="flow nomr">Внутренняя отделка помещений: стены помещений различного назначения, «кухонный
+                фартук»,
+                колонны, бани, сауны и др.
+            </li>
+            <li class="flow">облицовочный камень для печей и каминов
+            </li>
+        </ul>
+    </div>
+
+    <div class="cleaner"></div>
+</div> <!-- END of templatemo_main -->
+
+<div id="templatemo_bottom_wrapper">
+    <div id="templatemo_bottom">
+        <div class="col one_third">
+            <h4><span></span>Мы в соц. сетях</h4>
+            <!--<div class="footer_social_button">-->
+                <!--<a href="#"><img src="images/facebook.png" title="facebook" alt="facebook"/></a>-->
+                <!--<a href="#"><img src="images/flickr.png" title="flickr" alt="flickr"/></a>-->
+                <!--<a href="#"><img src="images/twitter.png" title="twitter" alt="twitter"/></a>-->
+                <!--<a href="#"><img src="images/youtube.png" title="youtube" alt="youtube"/></a>-->
+                <!--<a href="#"><img src="images/feed.png" title="rss" alt="rss"/></a>-->
+            <!--</div>-->
+        </div>
+        <div class="col one_third">
+            <h4><span></span>Обновления</h4>
+            <div class="bottom_box">
+                <ul class="twitter_post">
+                    <li>Curabitur nec dui venenatis sem consectetur facilisis. Donec velit nisi, lacinia sed et. <a
+                            href="#">http://bit.ly/13IwZO</a></li>
+                    <li>Proin dignissim, diam nec <a href="#">@TemplateMo</a> enim lorem tempus orci, ac imperdiet ante
+                        purus in justo.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col one_third no_margin_right">
+            <h4><span></span>О нас</h4>
+            <div class="bottom_box">
+                <p><em>Duis sem nisl, dignissim ac feugiat in, mattis sit amet est. Duis leo leo, suscipit cursus
+                    vehicula sit amet. Sed varius pellentesque massa vel rutrum.</em></p><br/>
+
+            </div>
+        </div>
+
+        <div class="cleaner"></div>
+    </div> <!-- END of tempatemo_bottom -->
+</div> <!-- END of tempatemo_bottom_wrapper -->
+
+<div id="templatemo_footer_wrapper">
+    <div id="templatemo_footer">
+
+    </div> <!-- END of templatemo_footer_wrapper -->
+</div> <!-- END of templatemo_footer -->
+</body>
+</html>

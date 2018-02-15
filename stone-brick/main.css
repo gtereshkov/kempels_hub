@@ -1,0 +1,458 @@
+/* CSS RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* --- WRAPPER --- */
+
+.wrap {
+	background: url("images/pattern.png") 
+}
+
+
+/* --- HEADER --- */
+.header {
+	min-height: 130px;
+	width: 100%;
+}
+
+.slogan, .phones {
+	height: 120px;
+	background-color: #fff;
+	opacity: 0.5;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.logo {
+	width: 45%;
+	height: 144px;
+	/*background-image: url('images/logo4.gif');
+	opacity: 0.5;*/
+}
+
+.slogan, .phones {
+	width: 20%;
+}
+
+.header {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+/* --- NAVIGATION --- */
+
+nav {
+	width: 100%;
+}
+
+.mainmenu {
+	width: 80%;
+	margin: 0 auto;
+	min-height: 50px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background: #ADA996;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	border-radius: 3px;
+	border: 1px solid #EA3434;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+nav ul li {
+	line-height: 50px;
+	position: relative;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #000; 
+	font-family: 'Fira Sans', Arial, Helvetica, serif;
+	font-size: 24px;
+	font-weight: bold;
+
+}
+
+nav ul li a:hover {
+	text-decoration: underline;
+	color: #EA3434;
+}
+
+nav ul li ul {
+	position: absolute;
+	top: 45px;
+	width: 210px;
+	border: 1px solid black;
+	border-radius: 3px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	padding-left: 5px;
+	background: #ADA996;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	display: none;
+	z-index: 999;
+} 
+
+nav ul li ul li {
+	line-height: 30px;
+}
+
+nav ul li ul li a {
+	font-size: 16px;
+}
+
+nav ul li:hover > ul {
+	display: block;
+}
+
+
+
+/* --- SLIDER --- */
+
+.slider {
+	margin: 20px auto 20px;
+	width: 90%;
+	display: flex;
+	justify-content: space-around;
+}
+
+
+
+/* --- DESCRIPTION --- */
+
+.description {
+	max-width: 90%;
+	margin: 20px auto;
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	-moz-justify-content: space-between;
+}
+
+.descr-flex1 {	
+	flex-basis: 300px;
+	flex-grow: 6;
+	-moz-flex-grow: 6;
+	margin-right: 40px;
+}
+
+.descr-flex2 {
+	flex-basis: 500px;
+	flex-grow: 12;
+	-moz-flex-grow: 12;
+	margin-right: 40px;
+}
+
+.descr-flex3 {
+	flex-basis: 150px;
+	flex-grow: 2;
+	-moz-flex-grow: 2;
+}
+
+.descr-flex1 p,
+.descr-flex2 ul,
+.descr-flex3 ul {
+	text-align: justify;
+	font-family: PTSansRegular, Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.42857143;
+	color: #dddcdd;
+}
+
+.descr-flex2 ul,
+.descr-flex3 ul {
+	list-style-image: url('images/list-item.png');
+}
+
+.description h2 {
+	font-family: Tahoma, Helvetica, Arial, sans-serif;
+	font-size: 24px;
+	margin-bottom: 20px;
+	color: #fff;
+	text-shadow: #FF6C00 1px 0 0px, #FF6C00 0 1px 0px, #FF6C00 -1px 0 0px, #FF6C00 0 -1px 0px;
+}
+
+
+
+/* --- ADVANTAGES --- */
+
+.advantages {
+	width: 90%;
+	margin: 30px auto;
+	min-height: 370px;
+	border: 2px ridge black;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	background: #ADA996;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.adv-header {
+  padding: 30px 20px;
+  text-align: center;
+} 
+.adv-header h2 {
+  font-family: Tahoma, Helvetica, Arial, sans-serif;
+  position: relative;
+  color: #FCF2E5;
+  text-shadow: #FF6C00 1px 0 0px, #FF6C00 0 1px 0px, #FF6C00 -1px 0 0px, #FF6C00 0 -1px 0px;
+  background: #494B46;
+  font-size: 2.5em;
+  font-weight: normal;
+  padding: 10px 40px;
+  display: inline-block;
+  margin: 0;
+  line-height: 1;
+}
+.adv-header h2:before {
+  content: ""; 
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: -15px;
+  background: #494B46;
+}
+.adv-header h2:after {
+  content: ""; 
+  position: absolute;
+  height: 0;
+  width: 80%;
+  border-top: 10px solid #494B46;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -25px;
+}
+@media (max-width: 500px) {
+  .adv-header h2 {font-size: 1.8em;}
+}
+@media (max-width: 400px) {
+  .adv-header h2 {
+    font-size: 1.5em;
+    padding: 10px 30px;
+  }
+}
+
+.adv-items {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-left: 30px;
+}
+
+.adv-item {
+	width: 30%;
+	margin-top: 20px;
+}
+
+.adv-img {
+	float: left;
+	width: 32px;
+	height: 32px;
+	margin: 0px 10px 8px 10px;
+}
+
+.adv-title {
+	float: left;
+	margin-top: 8px;
+	font-family: PTSansRegular, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.adv-descr {
+	max-width: 220px;
+	margin-left: 15px;
+	font-family: PTSansRegular, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+
+
+/* --- SALES HITS --- */
+
+.hits {
+	width: 90%;
+	margin: 30px auto;
+	min-height: 370px;
+}
+.hits>div {
+	width: 100%;
+	text-align: center;
+}
+
+.hits>div h2 {
+	font-family: 'Fira Sans', Arial, Helvetica, serif;
+	font-size: 30px;
+	color: #fff;
+	text-shadow: #FF6C00 1px 0 0px, #FF6C00 0 1px 0px, #FF6C00 -1px 0 0px, #FF6C00 0 -1px 0px;
+}
+
+.hits-elements {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	margin-top: 15px;
+
+}
+
+.hit-elem {
+	width: 19%;
+	min-height:340px;
+	border: 1px solid #EA3434;
+	border-radius: 4px;
+	text-align: left;
+	padding-left: 5px;
+	padding-top: 10px;
+	box-sizing: border-box;
+	background: #ADA996;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	font-family: 'Open Sans', sans-serif;
+}
+
+.hit-elem img {
+	transition: 0.5s;
+	margin: 10px auto 10px auto ;
+}
+.hit-elem img:hover {
+	-moz-transform: transform: scale(1.5); /* Для Firefox */
+    -ms-transform: transform: scale(1.5); /* Для IE */
+    -webkit-transform: transform: scale(1.5); /* Для Safari, Chrome, iOS */
+    -o-transform: transform: scale(1.5); /* Для Opera */
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
+.hit-image {
+	width: 100%;
+	text-align: center;
+	margin-left: -5px;
+}
+
+.hit-title {
+	font-weight: bold;
+	margin-bottom: 5px;
+	font-size: 18px;
+}
+
+.hit-plitka-price {
+	margin-bottom: 5px;
+}
+
+.hit-plitka-price span:first-child,
+.hit-ugol-price span:first-child {
+	font-weight: bold;
+}
+
+
+
+/* --- COORDINATES --- */
+
+.coordinates {
+	width: 90%;
+	margin: 40px auto 0;
+	min-height: 370px;
+}
+.coordinates>div {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.coordinates>div h2 {
+	font-family: 'Fira Sans', Arial, Helvetica, serif;
+	font-size: 30px;
+	color: #fff;
+	text-shadow: #FF6C00 1px 0 0px, #FF6C00 0 1px 0px, #FF6C00 -1px 0 0px, #FF6C00 0 -1px 0px;
+}
+
+.coord-blocks {
+	display: flex;
+	justify-content: space-between;
+}
+.coord-blocks div:first-child {
+	text-align: left;
+	font-family: 'Fira Sans', Arial, Helvetica, serif;
+	color: #fff;
+	font-size: 22px;
+	font-weight: bold;
+	line-height: 1.5;
+}
+
+.coord-blocks span {
+	color: red;
+}
+
+.telephones,
+.email-address {
+	margin-top: 20px;
+}
+
+.coord-blocks a {
+	color: red;
+}
+
+
+
+/* --- FOOTER --- */
+
+footer {
+	min-height: 200px;
+}

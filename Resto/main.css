@@ -1,0 +1,329 @@
+/* CSS RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* --- CONTAINER --- */
+
+.container{
+	margin-left: 180px;
+	width: 1000px;
+}
+
+/* --- HEADER --- */
+
+.headwrap{
+	min-height: 100px;
+	background-color: rgb(255,255,255);
+}
+
+.header img{
+	margin-top:40px;
+}
+
+.header-menu{
+	float: right;
+	margin-top:45px;
+}
+.navigationitem{
+	list-style: none;
+	display: inline-block;
+	padding-left: 40px;
+}
+
+.navigationitem a{
+	text-decoration: none;
+	font-family: Banda Regular, serif;	
+	color: rgb(58,58,58);
+}
+
+.navigationitem a:hover{
+	color: rgb(243,73,73);
+}
+
+/* --- BILLBOARD --- */
+
+.billboardwrap{
+	min-height: 520px;
+	background-image: url('img/billboard.png');
+	overflow: hidden;
+}
+
+.billboard{
+	min-height: 334px;
+	padding-top: 190px;
+	text-align: center;
+}
+
+.billboardimg2 {
+	margin-top: 15px;
+}
+
+/* --- THEMENUPIC --- */
+
+.themenupic{
+	height: auto;
+	width: 100%;
+	display: flex;
+    align-items: center;
+    align-content: center; 
+    justify-content: center; 
+    overflow: auto; 
+	margin-top: -2px;
+}
+
+
+/* --- MENU --- */
+
+.menuwrap{
+	min-height: 473px;
+}
+
+.menu{
+	padding-top: 53px;
+}
+
+.menuitem{
+	display: inline-block;
+	width: 470px;
+	height: 40px;
+	background-color: white;	
+	margin-bottom: 57px;
+}
+
+.menu li:nth-child(odd){
+	margin-right: 50px;
+}
+
+.dish {
+	display: inline-block;	
+	font-family: Cambria, serif;
+	font-size: 20px;
+	color: rgb(80,80,80);
+	margin-bottom: 3px;
+}
+
+.dishprice{
+	float: right;
+	margin-right: 20px;
+}
+
+.dishcontence{
+	font-style: italic;
+	color: rgb(160,160,160);
+}
+
+.button{
+	width: 125px;
+	height: 30px;
+	border: 1px solid rgb(120,120,120) ;
+	background-color: rgb(255,255,255);
+	overflow: hidden;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.button span{
+	display: inline-block;
+	float: left;
+	margin-top: 5px;
+	margin-left: 12px;
+	color: rgb(160,160,160);
+}
+
+.sprite{
+	display: inline-block;
+	float: right;
+	width: 20px;
+	height: 20px;
+	margin-top: 5px; 
+	margin-right: 12px;
+	background: url('img/sprites.png') -397px -157px;
+	opacity: 0.3;
+}
+
+
+/* --- FEATURED DISHES --- */
+.featuredwrap {
+	min-height: 510px;
+	background-color: white;
+}
+
+.featureditems {
+	margin-top:200px;
+}
+
+.featureddiv, .featuredhr {
+	display: inline-block;
+	float: left;
+	margin-right: 20px;
+}
+.featuredimg {
+	display: inline-block;
+	float: right;
+}
+
+.featureddiv{
+	font-weight: 500;
+	font-family: Cambria, serif;
+	font-size: 18px;
+	color: rgb(59,59,59);
+}
+
+.clear{
+	clear: both;
+}
+
+.f-elements {
+	min-height: 215px;
+	margin-top: 80px;
+	display: flex;
+    align-items: baseline;
+    justify-content: space-between; 
+    overflow: auto;
+}
+
+.f-element {
+	/*display: inline-block;*/
+	width: 230px;
+}
+
+.element {
+	display: inline-block;
+}
+
+.element-contence{
+	margin-top: 30px;
+	font-family: Cambria, serif;
+	font-size: 20px;
+	color: rgb(100,100,100);
+}
+
+.elementtitle{
+	float: left;	
+}
+
+.elementprice{
+	float: right;
+}
+
+.elementrating{
+	display:block;
+	margin-top: 15px;
+}
+
+
+/* --- THE GALLERY --- */
+
+.gallerywrap {
+	min-height: 630px;
+	background-color: white;
+}
+
+.gallerydiv, .galleryhr {
+	display: inline-block;
+	float: left;
+	margin-right: 20px;
+}
+
+.gallerydiv{
+	font-weight: 500;
+	font-family: Cambria, serif;
+	font-size: 18px;
+	color: rgb(59,59,59);
+}
+
+.galleryimages {
+	height: 432px;
+	margin-top: 80px;
+}
+
+.galleryimage {
+	display: inline-block;
+	float: left;
+}
+
+
+/* --- FOOTER --- */
+
+.footerwrap {
+	min-height: 250px;
+	background-color: rgb(59,59,59);
+	overflow: hidden;
+}
+
+.footercontence {
+	margin-top: 80px;	
+	width: 100%;	
+	display: flex;
+    align-items: baseline;
+    justify-content: space-between; 
+    overflow: auto;
+}
+
+.footercolumn {
+	width: 230px;
+	color: rgb(229,229,229);
+}
+
+.footercolumn p{
+	font-family: Calibri, serif;
+	line-height: 1.5;
+	font-weight: 200;
+}
+
+.footercolumn .footerbold{
+	font-weight: bold;
+	color: rgb(240,240,240);
+}
+
+.menufromfooter{
+	text-decoration: none;
+	color: rgb(240,240,240);
+	font-weight: bold;
+}
+
+.col-4 {
+	font-size: 14px;
+}
+

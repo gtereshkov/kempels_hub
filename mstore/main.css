@@ -1,0 +1,250 @@
+/* CSS RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* --- CONTAINER --- */
+.container{
+	margin-left: 19.5%;
+	width: 61%;
+}
+
+
+/* --- UPPER --- */
+.upperwrap{
+	min-height: 34px;
+	background-color: rgb(49,53,61);
+}
+
+.upper{
+	min-height: 34px;
+	overflow: hidden;
+}
+
+.uppercontacts {
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+.uppercontact{
+	font-size: 8px;
+	color: rgb(180,180,180);
+}
+
+div .uppercontact span{
+	color: rgb(255,255,255);
+}
+
+
+/* --- MENU --- */
+
+.menuwrap {
+	min-height: 47px;
+	overflow: hidden;
+}
+
+.menuelements {
+	margin-top: 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.elem2{
+	width: 380px;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+.elem2 a{
+	text-decoration: none;
+	color: rgb(84,84,84);
+	font-family: Roboto Light, Calibri, serif;
+	font-size: 16px;
+}
+
+.elem2 a:hover{
+	color: rgb(0,200,200);
+}
+
+.elem3 {
+	width: 130px;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+
+/* --- MAINSLIDE --- */
+
+.mainslidewrap{
+	height: 448px;
+	background-color: rgb(150,219,201);
+	background: url(img/bgslide1.png);
+	overflow: hidden;
+}
+
+.slidecontent{
+	height: 235px;
+	width: 335px;
+	margin-top: 95px;
+	margin-left: 67px;
+}
+
+.slidecontent-1 {
+	font-size: 10px;
+	font-family: Open Sans Extrabold, Calibri, serif;
+	font-weight: bold;
+	color: rgb(49,65,92);
+	margin-bottom: 20px;
+
+}
+
+.slidecontent-2 {
+	font-size: 51.22px;
+	font-family: Open Sans Extrabold, Calibri, serif;
+	color: rgb(49,65,92);
+	margin-bottom: 20px;
+	font-weight: bolder;
+}
+
+.slidecontent-3 {
+	font-size: 10px;
+	font-style: italic;
+	font-family: Roboto Light, Calibri, serif;
+	color: rgb(35,35,35);
+	margin-bottom: 20px;
+}
+
+.shopping-link {
+	width: 65px;
+	display: flex;
+	justify-content: space-between;
+	text-decoration: none;
+	font-family: Roboto, serif;
+	font-size: 7.11px;
+	font-weight: bold;
+	color: #000000;
+}
+
+
+/* --- ADVANTAGES --- */
+
+.advantageswrap {
+	min-height: 68px;
+	background: rgb(255,255,255);
+}
+
+.advantages{
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.advntg {
+	height: 68px;
+	width: 165px;
+}
+
+.advimage {
+	float: left;
+	margin-top: 3px;
+	margin-right: 15px;
+}
+
+.shippingadv-1{
+	font-family: Roboto, serif;
+	font-size: 10px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.shippingadv-2{
+	font-family: Roboto Light, serif;
+	font-size: 8.54px;
+	color: rgb(173,173,173);
+}
+
+/* --- BOY-GIRL --- */
+
+.boygirlwrap {
+	min-height: 285px;
+	background-color: rgb(255,255,255);
+}
+
+.boy-girl {
+	display: flex;
+	justify-content: space-between;
+}
+
+.boy {
+	width: 406px;
+	height: 285px;
+	background: url(img/boy.png) no-repeat;
+	position: relative;
+}
+
+.boy .shopping-button {
+	position: absolute;
+	left: 320px;
+	top: 225px;
+}
+
+.girl {
+	width: 406px;
+	height: 285px;
+	background: url(img/girl.png) no-repeat;
+	position: relative;
+}
+
+.girl .shopping-button {
+	position: absolute;
+	left: 12px;
+	top: 225px;
+}
+
