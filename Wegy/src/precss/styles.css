@@ -1,0 +1,72 @@
+body {
+	font-family: 'Ubuntu', sans-serif;
+}
+a {
+	text-decoration: none;
+	color: #4e4e4e;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.container {
+	max-width: 1055px;
+	margin: 0 auto;
+}
+
+/* UPHEADER */
+
+.upheader {
+	padding: 10px;
+}
+
+.logo-text,
+.logotype > img {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 27px;
+}
+.logotype {
+	display: block;
+	position: relative;
+	float: left;
+}
+.logotype:after {
+	content: "joomla text";
+	text-transform: uppercase;
+	font-size: 10px;
+	color: #888888;
+	position: absolute;
+	top: 55%;
+	left: 100%;
+	min-width: 100px;
+	/*margin-left: 5px;*/
+}
+
+.header-menu {
+	float: right;
+	padding: 5px 0;
+}
+.header-menu > li {
+	display: inline-block;
+	margin-left: 25px;
+}
+
+.header-menu > li > a {
+	transition: color 0.3s ease-out;
+}
+.header-menu > li > a:hover {
+	color: #4ab18f;
+}
+
+
+/* DOWNHEADER */
+
+.downheader {
+	background: url('../img/head-slider-1.png') center no-repeat;
+	background-size: cover;
+	min-height: 620px;
+}
